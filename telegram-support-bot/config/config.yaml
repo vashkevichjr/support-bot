@@ -1,0 +1,114 @@
+# bot settings
+bot_token: 7038256811:AAFZYTla3yT4YVLc3PinhWW1l7fwlw3fLeI # support bot token
+staffchat_id: -1002096113055 # eg. -123456789
+owner_id: 548641299
+spam_time: 300000 # time (in MS) in which user may send 5 messages
+spam_cant_msg: 5
+
+parse_mode: 'Markdown' # Experimental. Do not change unless you know what you are doing. Options: Markdown/MarkdownV2/HTML
+
+allow_private: false # Allow / disallow option for staff to chat privately
+direct_reply: false # Set this to true to just forward staff users to a user chat when allow_private
+auto_close_tickets: false # Close tickets after answering
+anonymous_tickets: true # Include userid in tickets or not
+anonymous_replies: true # Include staff member name in response
+show_auto_replied: true # Send auto replied msgs to staff chat
+show_user_ticket: false # Show ticket id to user
+autoreply_confirmation: false # Reply with language.confirmationMessage on each incoming message
+clean_replies: false # Remove footer and header from response
+pass_start: false # Pass /start command to support directly
+
+signal_enabled: false # Enable/disable signal
+signal_number: '+12345689' # Your signal number / account
+
+web_server: false # Enable/disable web server
+web_server_port: 8080 # Port for web server
+
+dev_mode: false # Enable/disable dev mode
+
+# customize your language
+language:
+  startCommandText: 'Здравствуйте, это бот поддержки команды inDetails!
+                     Можете писать здесь свои вопросы!'
+  faqCommandText: 'Это бот поддержки'
+  helpCommandText: "Попроси помощи!"
+  helpCommandStaffText: "Доступные команды\n
+    /start - Get a little introduction \n
+    /faq - Show frequently asked questions \n
+    /open - *Staff* Shows a list of open tickets \n
+    /reopen - *Staff* Reopen a closed ticket \n
+    /close - *Staff* Reply to a ticket with this to close and unban \n
+    /clear - *Staff* Closes all tickets \n
+    /ban - *Staff* Ban a user from the chat \n
+    /unban - *Staff* Unban a user"
+  confirmationMessage: "Спасибо за обращение! Мы ответим вам в ближайшее время!"
+  blockedSpam: 'Вы отправили слишком много запросов. Подождите, пока отправка запросов станет доступной.'
+  ticket: 'Билет'
+  closed: 'закрыт'
+  acceptedBy: 'был принят'
+  dear: 'Здравствуйте!'
+  regards: 'С уважением,'
+  from: 'от'
+  language: 'Язык!!'
+  msg_sent: 'Сообщение отрпвлено пользователю'
+  file_sent: 'Файл отправлен пользователю'
+  usr_with_ticket: 'Пользователь с билетом'
+  banned: 'забанен'
+  replyPrivate: 'Отправлено в приватный чат'
+  services: 'Выберите ниже'
+  customer: 'клиент'
+  msgForwarding: 'Ваше сообщение будет отправлено продавцам!'
+  back: 'Назад'
+  whatSubCategory: 'Что описывает ваши требования лучше всего?'
+  prvChatEnded: 'Приватный чат закрыт'
+  prvChatOpened: 'Открыт приватный чат с продавцом'
+  prvChatEnd: 'Закрыть приватный чат'
+  prvChatOpenedCustomer: 'Открыт приватный чат'
+  instructionsSent: 'Инструкции были отправлены в ваш приватный чат'
+  openTickets: 'Открыть билет'
+  support: 'Поддержка'
+  prvChatOnly: 'Это команда может быть использована только в приватном чате!'
+  ticketClosed: 'Ваш билет закрыт. Вы можете открыть новый тикет в любой момент!'
+  links: 'Ссылки'
+  textFirst: 'Пожалуйста, отправьте нам сообщение до отправки фото. Так мы с большей вероятностью сможем помочь вам.'
+  ticketClosedError: 'Вы не можете ответить на закрытый билет'
+  automatedReply: 'Это автоматический ответ'
+  automatedReplyAuthor: 'inDetails Support Bot'
+  doesntHelp: 'Это не помогает.'
+  automatedReplySent: 'Автоматический ответ был отправлен пользователю'
+  ticketReopened: 'билет переоткрыт'
+  regardsGroup: 'команда inDetails'
+
+autoreply:
+  - question: 'Что делать?'
+    answer: "Обратиться к нам!"
+  - question: 'Когда?'
+    answer: 'Сейчас!'
+# categories:
+#  - name: "Category1"
+#    subgroups:
+#    - name: "Sub1"
+#      group_id: "-12345678910"
+#    - name: "Sub2"
+#      group_id: "-12345678910"
+#    - name: "Sub3"
+#      group_id: "-12345678910"
+#  - name: "Category2"
+#    subgroups:
+#    - name: "Sub4"
+#      group_id: "-12345678910"
+#    - name: "Sub5"
+#      group_id: "-12345678910"
+#    - name: "Sub6"
+#      group_id: "-12345678910"
+#  - name: "Category with no subcategories"
+#    group_id: "-12345678910"
+#  - name: "Admin Chat"
+#    group_id: "-12345678910"
+#  - name: "Other issues"
+#    tag: "#other"
+#    msg: "Please specify your order number and describe the problem in as much detail as possible"
+#    group_id: "-12345678910"
+#  - name: "Contact"
+#    msg: "Check out our Website"
+
